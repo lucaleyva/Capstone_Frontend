@@ -19,3 +19,6 @@ main{
   .rating span{
   margin:0.1rem;
   }
+  .signInButton {
+    padding-top: 5px;
+  }

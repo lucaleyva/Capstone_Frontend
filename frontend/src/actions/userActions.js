@@ -1,5 +1,3 @@
-
-   
 import axios from 'axios'
 import {
   USER_LOGIN_FAIL,
@@ -21,7 +19,7 @@ export const login = (email, password) => async (dispatch) => {
 
     const { data } = await axios.post(
       '/api/users/login',
-      { email, password },
+      { 'username': email, 'password':password },
       config
     )
 
