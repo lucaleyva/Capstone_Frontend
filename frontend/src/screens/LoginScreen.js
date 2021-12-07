@@ -7,7 +7,7 @@ import Loader from '../components/Loader'
 import FormContainer from '../components/FormContainer'
 import { login } from '../actions/userActions'
 
-const LoginScreen = ({ location, history }) => {
+function LoginScreen({ location, history }) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -46,7 +46,7 @@ const LoginScreen = ({ location, history }) => {
         </Form.Group>
 
         <Form.Group controlId='password'>
-          <Form.Label>Password Address</Form.Label>
+          <Form.Label>Password</Form.Label>
           <Form.Control
             type='password'
             placeholder='Enter password'
