@@ -4,7 +4,7 @@ const products = [
         'name': 'Agile Software Development: From Beginner to Practicioner',
         'image': '/images/intro_to_agile.jpg',
         'description':
-        'Learn why and when you should use agile, how to be agile, \n understanding and applying Extreme Programming (XP) practices, \n collaborating, releasing, planning, developing, process \n improvement, identify and elimante waste, and how to seek \n techincal excellence. \n Includes 20 hours of video instruction, text book, course workbook, templates for getting started, and 4 weekly group coaching calls.',
+        'Learn why and when you should use agile, how to be agile, understanding and applying Extreme Programming (XP) practices, collaborating, releasing, planning, developing, process improvement, identify and elimante waste, and how to seek techincal excellence. Includes 20 hours of video instruction, text book, course workbook, templates for getting started, and 4 weekly group coaching calls.',
         'instructor': 'Luca Leyva',
         'category': 'Agile',
         'price': 699.99,
@@ -17,7 +17,7 @@ const products = [
         'name': 'Scrum: From Beginner to Practicioner',
         'image': '/images/scrum.jpg',
         'description':
-        'Learn how to use Scrum to deliver higher quality products that \n customers love at a quicker rate. \n Includes 10 hours of video instruction, text book, course workbook, templates for getting started, and 2 coaching.',
+        'Learn how to use Scrum to deliver higher quality products that customers love at a quicker rate. Includes 10 hours of video instruction, text book, course workbook, templates for getting started, and 2 coaching.',
         'instructor': 'Luca Leyva',
         'category': 'Agile',
         'price': 350,
@@ -30,7 +30,7 @@ const products = [
         'name': 'Lean: From Beginner to Practicioner',
         'image': '/images/Lean.jpg',
         'description':
-        'Learn how to use Lean to reduce waste, increse alignment and \n autonomy, and deliver high qulaity products as a much faster \n pace. \n Includes 20 hours of video instruction, text book, course workbook, templates for getting started, and 4 weekly group coaching calls.',
+        'Learn how to use Lean to reduce waste, increse alignment and autonomy, and deliver high qulaity products as a much faster pace. Includes 20 hours of video instruction, text book, course workbook, templates for getting started, and 4 weekly group coaching calls.',
         'instructor': 'Luca Leyva',
         'category': 'Lean',
         'price': 699.99,
