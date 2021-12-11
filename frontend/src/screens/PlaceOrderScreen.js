@@ -18,7 +18,7 @@ function PlaceOrderScreen({ history }) {
 
     cart.itemsPrice = cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0).toFixed(2)
     cart.shippingPrice = (cart.itemsPrice > 100 ? 0 : 10).toFixed(2)
-    cart.taxPrice = Number((0.082) * cart.itemsPrice).toFixed(2)
+    cart.taxPrice = Number((0.09) * cart.itemsPrice).toFixed(2)
 
     cart.totalPrice = (Number(cart.itemsPrice) + Number(cart.shippingPrice) + Number(cart.taxPrice)).toFixed(2)
 
@@ -32,7 +32,7 @@ function PlaceOrderScreen({ history }) {
             history.push(`/order/${order._id}`)
             dispatch({ type: ORDER_CREATE_RESET })
         }
-    }, [dispatch, order._id, success, history])
+    }, [dispatch, success, history])
 
     const placeOrder = () => {
         dispatch(createOrder({
@@ -59,7 +59,7 @@ function PlaceOrderScreen({ history }) {
                                 <strong>Shipping: </strong>
                                 {cart.shippingAddress.address},
                                 {' '}
-                                {cart.shippingAddress.city}
+                                {cart.shippingAddress.city},
                                 {'  '}
                                 {cart.shippingAddress.postalCode},
                                 {'  '}
@@ -80,26 +80,26 @@ function PlaceOrderScreen({ history }) {
                             {cart.cartItems.length === 0 ? <Message variant='info'>
                                 Your cart is empty
                             </Message> : (
-                                    <ListGroup variant='flush'>
-                                        {cart.cartItems.map((item, index) => (
-                                            <ListGroup.Item key={index}>
-                                                <Row>
-                                                    <Col md={1}>
-                                                        <Image src={item.image} alt={item.name} fluid rounded />
-                                                    </Col>
+                                <ListGroup varint='flush'>
+                                    {cart.cartItems.map((item, index) => (
+                                        <ListGroup.Item key={index}>
+                                            <Row>
+                                                <Col md={1}>
+                                                <Image src={item.image} alt={item.name} fluid rounded/>
+                                                </Col>
 
-                                                    <Col>
-                                                        <Link to={`/product/${item.product}`}>{item.name}</Link>
-                                                    </Col>
+                                                <Col>
+                                                    <Link to={`/product/${item.product}`}>{item.name}</Link>
+                                                </Col>
 
-                                                    <Col md={4}>
-                                                        {item.qty} X ${item.price} = ${(item.qty * item.price).toFixed(2)}
-                                                    </Col>
-                                                </Row>
-                                            </ListGroup.Item>
-                                        ))}
-                                    </ListGroup>
-                                )}
+                                                <Col md={4}>
+                                                    {item.qty} &times; &#36;{item.price} &#61; &#36;{(item.qty * item.price).toFixed(2)}
+                                                </Col>
+                                            </Row>
+                                        </ListGroup.Item>
+                                    ))}
+                                </ListGroup>
+                            )}
                         </ListGroup.Item>
 
                     </ListGroup>
@@ -115,29 +115,29 @@ function PlaceOrderScreen({ history }) {
 
                             <ListGroup.Item>
                                 <Row>
-                                    <Col>Items:</Col>
-                                    <Col>${cart.itemsPrice}</Col>
+                                    <Col>Item&#40;s&#41;:</Col>
+                                    <Col>&#36;{cart.itemsPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
 
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Shipping:</Col>
-                                    <Col>${cart.shippingPrice}</Col>
+                                    <Col>&#36;{cart.shippingPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
 
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Tax:</Col>
-                                    <Col>${cart.taxPrice}</Col>
+                                    <Col>&#36;{cart.taxPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
 
                             <ListGroup.Item>
                                 <Row>
                                     <Col>Total:</Col>
-                                    <Col>${cart.totalPrice}</Col>
+                                    <Col>&#36;{cart.totalPrice}</Col>
                                 </Row>
                             </ListGroup.Item>
 

@@ -36,7 +36,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
       }
   
       const { data } = await axios.post(
-        '/api/orders/add',
+        `/api/orders/add`,
         order,
         config
       )
