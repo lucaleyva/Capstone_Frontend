@@ -73,9 +73,11 @@ function OrderListScreen({ history }) {
 
                                         <td>
                                             <LinkContainer to={`/order/${order._id}`}>
-                                                <Button variant='light' className='btn-sm'>
+                                                <div className='d-grid gap-2'>
+                                                <Button variant='info' className='btn-sm'>
                                                     Details
                                                 </Button>
+                                                </div>
                                             </LinkContainer>
 
 
@@ -90,3 +92,4 @@ function OrderListScreen({ history }) {
 }
 
 export default OrderListScreen
+

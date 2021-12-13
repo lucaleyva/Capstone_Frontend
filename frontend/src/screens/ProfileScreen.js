@@ -111,10 +111,11 @@ function ProfileScreen({ history }){
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
-
-        <Button type='submit' variant='primary'>
-          Update
-        </Button>
+        <div className='d-grid gap-2'>
+          <Button type='submit' variant='primary'>
+            Update
+          </Button>
+        </div>
 
       </Form>
 
@@ -151,7 +152,9 @@ function ProfileScreen({ history }){
                                             )}</td>
                                             <td>
                                                 <LinkContainer to={`/order/${order._id}`}>
+                                                  <div className='d-grid gap-2'>
                                                     <Button variant='info' className='btn-sm'>Details</Button>
+                                                  </div>
                                                 </LinkContainer>
                                             </td>
                                         </tr>
