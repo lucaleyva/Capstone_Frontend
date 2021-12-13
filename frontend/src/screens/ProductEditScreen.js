@@ -115,7 +115,7 @@ function ProductEditScreen({ match, history }) {
                             <Form.Group controlId='name'>
                                 <Form.Label>Name</Form.Label>
                                 <Form.Control
-
+                                    className='mb-2'
                                     type='name'
                                     placeholder='Enter name'
                                     value={name}
@@ -127,7 +127,7 @@ function ProductEditScreen({ match, history }) {
                             <Form.Group controlId='price'>
                                 <Form.Label>Price</Form.Label>
                                 <Form.Control
-
+                                    className='mb-2'
                                     type='number'
                                     placeholder='Enter price'
                                     value={price}
@@ -140,7 +140,7 @@ function ProductEditScreen({ match, history }) {
                             <Form.Group controlId='image'>
                                 <Form.Label>Image</Form.Label>
                                 <Form.Control
-
+                                    className='mb-2'
                                     type='text'
                                     placeholder='Enter image'
                                     value={image}
@@ -149,6 +149,7 @@ function ProductEditScreen({ match, history }) {
                                 </Form.Control>
 
                                 <Form.File
+
                                     id='image-file'
                                     label='Choose File'
                                     custom
@@ -164,7 +165,7 @@ function ProductEditScreen({ match, history }) {
                             <Form.Group controlId='instructor'>
                                 <Form.Label>Instructor</Form.Label>
                                 <Form.Control
-
+                                    className='mb-2'
                                     type='text'
                                     placeholder='Enter instructor'
                                     value={instructor}
@@ -176,7 +177,7 @@ function ProductEditScreen({ match, history }) {
                             <Form.Group controlId='countinstock'>
                                 <Form.Label>Stock</Form.Label>
                                 <Form.Control
-
+                                    className='mb-2'
                                     type='number'
                                     placeholder='Enter stock'
                                     value={countInStock}
@@ -188,7 +189,7 @@ function ProductEditScreen({ match, history }) {
                             <Form.Group controlId='category'>
                                 <Form.Label>Category</Form.Label>
                                 <Form.Control
-
+                                    className='mb-2'
                                     type='text'
                                     placeholder='Enter category'
                                     value={category}
@@ -200,7 +201,7 @@ function ProductEditScreen({ match, history }) {
                             <Form.Group controlId='description'>
                                 <Form.Label>Description</Form.Label>
                                 <Form.Control
-
+                                    className='mb-2'
                                     type='text'
                                     placeholder='Enter description'
                                     value={description}
@@ -210,7 +211,7 @@ function ProductEditScreen({ match, history }) {
                             </Form.Group>
 
 
-                            <Button type='submit' variant='primary'>
+                            <Button className='mb-2' type='submit' variant='primary'>
                                 Update
                         </Button>
 

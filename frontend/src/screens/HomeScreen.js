@@ -24,7 +24,7 @@ const HomeScreen = ({history}) => {
       <div>
         {!keyword && <ProductCarousel />}
         
-          <h1>Latest Products</h1>
+          <h1>Newest Courses</h1>
           {loading ? <Loader />
               : error ? <Message variant='danger'>{error}</Message>
                   :
