@@ -46,39 +46,43 @@ const RegisterScreen = ({ location, history }) => {
         <Form.Group controlId='name'>
           <Form.Label>Name</Form.Label>
           <Form.Control
+            className='mb-2'
             required
             type='name'
             placeholder='Enter name'
             value={name}
             onChange={(e) => setName(e.target.value)}
-          ></Form.Control>
+            ></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='email'>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
+            className='mb-2'
             required
             type='email'
             placeholder='Enter email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-          ></Form.Control>
+            ></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='password'>
           <Form.Label>Password Address</Form.Label>
           <Form.Control
+            className='mb-2'
             required
             type='password'
             placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          ></Form.Control>
+            ></Form.Control>
         </Form.Group>
 
         <Form.Group controlId='confirmPassword'>
           <Form.Label>Confirm Password</Form.Label>
           <Form.Control
+            className='mb-2'
             required
             type='password'
             placeholder='Confirm password'
@@ -95,7 +99,10 @@ const RegisterScreen = ({ location, history }) => {
 
       <Row className='py-3'>
         <Col>
-          Have an Account?<Link 
+          Have an Account?
+          &nbsp;
+
+          <Link 
           to={redirect ? `/login?redirect=${redirect}` : '/login'}>
             Sign In
           </Link>

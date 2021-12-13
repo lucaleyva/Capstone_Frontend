@@ -52,7 +52,7 @@ function UserListScreen({ history }) {
                                     <th>NAME</th>
                                     <th>EMAIL</th>
                                     <th>ADMIN</th>
-                                    <th></th>
+                                    <th>Update/Delete</th>
                                 </tr>
                             </thead>
 

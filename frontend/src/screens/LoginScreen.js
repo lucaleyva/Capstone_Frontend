@@ -38,6 +38,7 @@ function LoginScreen({ location, history }) {
         <Form.Group controlId='email'>
           <Form.Label>Email Address</Form.Label>
           <Form.Control
+            className='mb-2'
             type='email'
             placeholder='Enter email'
             value={email}
@@ -48,6 +49,7 @@ function LoginScreen({ location, history }) {
         <Form.Group controlId='password'>
           <Form.Label>Password</Form.Label>
           <Form.Control
+            className='mb-2'
             type='password'
             placeholder='Enter password'
             value={password}
@@ -62,9 +64,10 @@ function LoginScreen({ location, history }) {
 
       <Row className='py-3'>
         <Col>
-          New Customer?
+            New Customer?
+            &nbsp;
           <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
-            Register
+          Register
           </Link>
         </Col>
       </Row>
