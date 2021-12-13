@@ -45,7 +45,7 @@ function OrderListScreen({ history }) {
                                     <th>Total</th>
                                     <th>PAID</th>
                                     <th>DELIVERED</th>
-                                    <th></th>
+                                    <th>View Order</th>
                                 </tr>
                             </thead>
 

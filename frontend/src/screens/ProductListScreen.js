@@ -88,7 +88,7 @@ function ProductListScreen({ history, match }) {
                                         <th>PRICE</th>
                                         <th>CATEGORY</th>
                                         <th>INSTRUCTOR</th>
-                                        <th></th>
+                                        <th>Update/Delete</th>
                                     </tr>
                                 </thead>
 
