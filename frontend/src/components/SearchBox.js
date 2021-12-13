@@ -16,9 +16,7 @@ function SearchBox() {
         }
     }
     return (
-        // ? There's a weird bug where when you delete 'd-flex' add it in and then save, it will align the search bar and button online. but when you refresh the page, the alignment is thrown off.
-        // TODO: Get Pascal's help
-        <Form onSubmit={submitHandler} inline class='d-flex'>
+        <Form onSubmit={submitHandler} class='d-flex'>
             <Form.Control
                 type='text'
                 name='q'
