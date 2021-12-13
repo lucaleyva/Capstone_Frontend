@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
+import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
 
 const Header = () => {
@@ -19,8 +20,10 @@ const Header = () => {
         <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
           <Container>
             <LinkContainer to='/'>
-              <Navbar.Brand>A&amp;O Coaching</Navbar.Brand>
+              <Navbar.Brand>Adapt &amp; Overcome Coaching</Navbar.Brand>
             </LinkContainer>
+            <SearchBox/>
+
             <Navbar.Toggle aria-controls='basic-navbar-nav' />
             <Navbar.Collapse id='basic-navbar-nav'>
               <Nav className='ms-auto'>
